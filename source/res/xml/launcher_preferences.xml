@@ -50,4 +50,10 @@
         launcher:logIdOn="615"
         launcher:logIdOff="616" />
 
+    <Preference
+        android:key="open_source_license"
+        android:title="@string/open_source_licenses_title"
+        android:summary="@string/open_source_licenses_summary"
+        android:persistent="false" />
+
 </androidx.preference.PreferenceScreen>
