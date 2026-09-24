@@ -1,24 +1,24 @@
-# Launcher3 Android 16 User-App Port
-- このアプリは、Google様およびAOSPプロジェクトによりつくられたAndroidの標準ランチャーであり、私の自作ではありません。ご注意ください。
-指定された AOSP Launcher3 `android16-release` を、通常のユーザー APK として直接コンパイルする移植プロジェクトです。
+------------------------------
+## Launcher3 Android 16 User-App Port
 
-## 最短ビルド
+* Please note: This app is the standard Android launcher created by Google and the AOSP project. It is not my own original work.
 
-1. JDK 17 と Android SDK Platform 36 / Build Tools 36.0.0 を準備します。
-2. プロジェクト直下に SDK パスを含む `local.properties` を作ります。
+This porting project allows you to directly compile the specified AOSP Launcher3 android16-release branch as a standard, non-system user APK.
+## Quick Start Build
 
-   ```properties
+   1. Set up JDK 17 and Android SDK Platform 36 / Build Tools 36.0.0.
+   2. Create a local.properties file in the project root directory and include your SDK path:
+   
    sdk.dir=/absolute/path/to/Android/Sdk
-   ```
-
-3. デバッグ APK をビルドします。
-
-   ```sh
+   
+   3. Build the debug APK:
+   
    ./gradlew --no-daemon --max-workers=1 :app:assembleDebug
-   ```
+   
+   
+The output will be generated at app/build/outputs/apk/debug/app-debug.apk.
+For detailed porting strategies, SDK setup, release signing, verification, and on-device logging, please refer to docs/LAUNCHER3_USER_APP_PORTING_GUIDE_JA.md.
 
-出力は `app/build/outputs/apk/debug/app-debug.apk` です。
+This distribution does not include the SDK, Gradle cache, build artifacts, APKs, or local signing keys. The Gradle Wrapper and Maven dependencies will be fetched over the network during the initial build.
 
-詳細な移植方針、SDK 準備、リリース署名、検証、実機ログ取得は [docs/LAUNCHER3_USER_APP_PORTING_GUIDE_JA.md](docs/LAUNCHER3_USER_APP_PORTING_GUIDE_JA.md) を参照してください。
-
-> この配布物には SDK、Gradle キャッシュ、ビルド生成物、APK、ローカル署名鍵を含めません。初回ビルド時には Gradle Wrapper と Maven 依存関係をネットワーク経由で取得します。
+------------------------------
