@@ -1,6 +1,6 @@
 # Open Source Licenses change set
 
-This change adds an **Open source licenses** entry to the Launcher3 **Home settings** screen. Tapping it opens an internal, scrollable license viewer containing the repository's Apache License 2.0 text.
+"If you fork Launcher3 and want to use a different license notation, you can change it here."
 
 ## Placement
 
