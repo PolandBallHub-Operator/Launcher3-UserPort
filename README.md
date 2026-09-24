@@ -1,5 +1,5 @@
 # Launcher3 Android 16 User-App Port
-
+- このアプリは、Google様およびAOSPプロジェクトによりつくられたAndroidの標準ランチャーであり、私の自作ではありません。ご注意ください。
 指定された AOSP Launcher3 `android16-release` を、通常のユーザー APK として直接コンパイルする移植プロジェクトです。
 
 ## 最短ビルド
