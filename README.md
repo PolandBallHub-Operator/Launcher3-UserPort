@@ -1,3 +1,5 @@
+#Here's an example of how to use this repository!
+- https://github.com/PolandBallHub-Operator/Launcher3-MiniCustom
 ------------------------------
 ## Launcher3 Android 16 User-App Port
 
